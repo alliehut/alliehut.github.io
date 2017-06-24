@@ -1,6 +1,12 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
+
+@font-face {
+	font-family:"Above";
+	src: url("ABOVE.ttf") /* TTF file for CSS3 browsers */
+}
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -121,7 +127,7 @@
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -159,7 +165,7 @@
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
-		text-transform: uppercase;
+		text-transform: captialize;
 		letter-spacing: 0.2rem;
 	}
 
@@ -179,6 +185,7 @@
 		}
 
 	h1 {
+		font-family:'Above', sans-serif;
 		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
