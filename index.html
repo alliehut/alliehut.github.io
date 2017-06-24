@@ -13,6 +13,10 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 	</head>
 	<body>
 
@@ -45,17 +49,46 @@
 
 						<!-- Intro -->
 							<article id="details">
-								<h3 class="major">Wedding Details</h3>
-								<span class="image main"><img src="images/bones.jpg" alt="" /></span>
-								<h4 class="major">Location</h4>
+								<h3 class="major">WEDDING DETAILS</h3>
+								<div class="w3-content w3-display-container">
+								  <img class="mySlides" src="images/tahoe2.jpg" style="width:100%">
+								  <img class="mySlides" src="images/halfdome2.jpg" style="width:100%">
+								  <img class="mySlides" src="images/FirstCommunion.jpg" style="width:100%">
+								  <img class="mySlides" src="images/bigsur.jpg" style="width:100%">
+
+								  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+								  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+								</div>
+
+								<script>
+								var slideIndex = 1;
+								showDivs(slideIndex);
+
+								function plusDivs(n) {
+								  showDivs(slideIndex += n);
+								}
+
+								function showDivs(n) {
+								  var i;
+								  var x = document.getElementsByClassName("mySlides");
+								  if (n > x.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = x.length}
+								  for (i = 0; i < x.length; i++) {
+								     x[i].style.display = "none";  
+								  }
+								  x[slideIndex-1].style.display = "block";  
+								}
+								</script>
+								<br></br>
+								<h4 class="major">LOCATION</h4>
 								<p>We are getting married at St. Clair's Catholic Mission in Three Rivers, California at 3 o'clock. There will be a reception to follow at the White Horse Inn just down the road.
 								<br></br>
 								The reception will be open to <i> adult guests only</i>. Our venue opens onto a rushing river, and is not suitable for little ones. <br>
 								<strong><a href="https://www.google.com/maps/d/edit?mid=1cvwxJzacAXWK3O9s_hoOijvhRVE&ll=36.4561688213726%2C-118.88138545000004&z=16">Get Directions</a></strong></br>
-								<h4 class="major">Accommodations</h4>
+								<h4 class="major">ACCOMMODATIONS</h4>
 								<p>We have rooms reserved at the Comfort Inn and Suites for the night of Friday, October 27, 2017. Just mention our names, and be sure to make your reservation before September 26, 2017.<br>
 								<strong><a href="https://www.choicehotels.com/california/three-rivers/comfort-inn-hotels/caa26">Book your room!</a></strong>
-								<h4 class="major">Shuttle</h4>
+								<h4 class="major">SHUTTLE</h4>
 								<p>If you'd rather not drive during or after our party, you'll be able to catch a shuttle:<ul>
 								<li>Comfort Inn and Suites to the wedding X:XX to X:XX</li>
 								<li>The wedding to the reception X:XX to X:XX</li>
